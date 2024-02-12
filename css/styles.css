@@ -1,0 +1,589 @@
+:root {
+    --cream: #004381;
+    --blue: #00b7ff;
+    --bg: #000544;
+    --shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family:'sans';
+    /* min-height: 8000px; */
+}
+
+.hero::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/peakpx.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* opacity: 0.5; */
+    /* filter: grayscale(); */
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+.hero .box {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--cream);
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    transition: 0.5s ease all;
+    font-family: 'sacramento';
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    background-color: var(--cream);
+    color: white;
+}
+
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    backdrop-filter: blur;
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: 'sacramento', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home {
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/pattern.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.home h2, .gallery h2, .gift h2 {
+    color: var(--cream);
+    font-family: 'sacramento';
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.home h3 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.home .couple {
+    margin-top: 100px;
+
+}
+
+.home .couple h3 {
+    font-family: 'sacramento';
+    font-size: 2.4rem;
+    color: var(--cream);
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+    margin: auto;
+    color: var(--cream);
+}
+
+.info {
+    background-color: var(--bg);
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    font-family: 'work sans';
+    
+}
+
+#info .container {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border-radius: 5%;
+    text-shadow: var(--shadow);
+    
+}
+
+.info h2 {
+    color: var(--blue);
+    font-family: 'sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem;
+}
+
+.info .description {
+    font-size: 1rem;
+    font-weight: 300px;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+}
+
+.info .card-header {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    
+}
+
+.info .card-body {
+    border-bottom: 1px solid #999;
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 1px solid #999;
+    font-size: 1rem;
+    font-weight: 0.9rem;
+
+}
+
+.info a {
+    color: var(--cream);
+    font-family: 'sacramento';
+    font-size: 1.5rem;
+    background-color: white;
+    transition: 1s ease all;
+    border-radius: 2rem;
+    padding: 10px 10px;
+    font-weight: bold;
+
+}
+
+.info a:hover {
+    background-color: var(--cream);
+    color: white;
+}
+
+
+.story h2{
+    color: var(--cream);
+    font-family: 'sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.story {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url(/img/pattern.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.story span,  .gallery span, .gift span{
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.story-header {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+
+}
+
+.story p, .gift p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+
+.timeline li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before, .timeline li::after {
+    content: '';
+    display: table;
+}
+
+.timeline li::after {
+    clear: both;
+}
+
+.timeline li .timeline-image {
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+
+.gallery, .gift {
+    background-image: url(/img/pattern.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    min-height: 100vh;
+}
+
+
+footer {
+    padding: 1rem;
+    background-color: var(--cream);
+    color: white;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: a;
+}
+
+footer a:active {
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 50%;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+
+to {
+    transform: rotate(360deg);
+}
+    
+}
+
+
+/* media queries */
+/* Extra Large */
+
+@media(max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+
+/* laptop */
+@media(max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 70px;
+    }
+
+    .home .heart {
+        display: none;
+    }
+
+    .timeline::before {
+        left: 60px;
+    }
+
+    .timeline li .timeline-image {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc(100% - 200px);
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+        top: 50px;
+    }
+
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+        top: 50px;
+    }
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 40px;
+        margin: 5px;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sticky-top {
+        overflow: hidden;
+    }
+
+
+}
+
+/* hp */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 10px;
+        margin: 3px;
+    }
+
+    .row, .h3, .p {
+        margin: auto;
+    }
+
+    .herlang{
+        display: block;
+    }
+
+    .ata {
+        display: block;
+    }
+
+    #info .container {
+        width: 80%;
+    }
+
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        float: right;
+        width: 60%;
+        transform: translateX(-5%);
+    }
+    
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+        top: 40px;
+    }
+    
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+        top: 41px;
+    }
+
+    .rsvp h2 {
+        font-size: 3rem;
+    }
+}
